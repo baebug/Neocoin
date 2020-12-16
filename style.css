@@ -1,0 +1,42 @@
+body {
+    margin:0;
+}
+h1 {
+    text-align: center;
+    padding: 30px;
+    padding-bottom: 60px;
+    border-bottom: 1px gray solid;
+    margin: 0;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+ul {
+    border-right:1px gray solid;
+    margin:0;
+}
+ul li {
+    padding: 20px;
+}
+#grid {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+}
+#mainside {
+    padding: 15px;
+    padding-left: 40px;
+}
+@media(max-width:900px) {
+    h1 {
+        display: none;
+    }
+    #grid {
+        display:block;
+    }
+    ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        border-bottom: 1px solid gray;
+   }
+}
